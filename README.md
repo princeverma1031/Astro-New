@@ -171,6 +171,8 @@ Building a good website is difficult as it encompasses a lot of topics such as p
 ## Sources
 
 **CSS:** The `global.css` file located in `src/styles` is inspired by Bear Blog's default [CSS](https://github.com/HermanMartinus/bearblog/blob/297026a877bc2ab2b3bdfbd6b9f7961c350917dd/templates/styles/blog/default.css).
+
+**Theme:** The site uses a light royal blue theme. All colors are defined as CSS custom properties in the `:root` block of `src/styles/global.css` (`--accent` is royal blue `rgb(65, 105, 225)`, `--main-bg` is a blue-tinted white, `--dark-bg` is navy for the footer). The browser `theme-color` meta tags in `src/components/BaseHead.astro` match these values. Change the theme by editing those variables; components reference them rather than hardcoding colors.
   
 
 **Image and Brand icon:** The placeholder image located in `src/img` and the brand svg in `src/icons` were created using DALL-E and are meant for illustrational and demonstrational purposes only.

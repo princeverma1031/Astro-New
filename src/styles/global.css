@@ -13,18 +13,19 @@
 :root {
 	color-scheme: light;
 
-    --dark-bg: rgb(16, 18, 27);
+    /* Light royal blue theme */
+    --dark-bg: rgb(20, 32, 82);
 
-    --main-bg: rgb(255, 255, 255, 80%);
-    --text-color: rgb(0, 0, 0, 80%);
+    --main-bg: rgb(245, 248, 255);
+    --text-color: rgb(17, 24, 51, 85%);
 
-    --text-color-inversed: rgba(255, 255, 255, 80%);
+    --text-color-inversed: rgba(255, 255, 255, 85%);
 
-    --accent: rgb(47, 151, 70);
-	--accent-dark: rgb(27, 85, 39);
+    --accent: rgb(65, 105, 225);
+	--accent-dark: rgb(38, 66, 160);
 
-    --secondary: rgb(171, 178, 180);
-    --secondary-dark: rgb(108, 117, 119);
+    --secondary: rgb(180, 194, 232);
+    --secondary-dark: rgb(104, 124, 184);
 }
 
 body {
