@@ -110,6 +110,7 @@ The project contains a few minimalistic starter components and files to kickstar
 
 - `index.astro` is the home page and `404.astro` the not-found page.
 - `ping.ts` is a static JSON health check endpoint served at `/ping`. It returns `{ "status": "ok", "timestamp": "<ISO 8601>" }`. Because the site is built statically, the timestamp reflects the last build time in production.
+- `health.ts` is a more detailed static health check served at `/health`. It returns `{ "status": "ok", "service": "<name>", "version": "<version>", "environment": "production" | "development", "timestamp": "<ISO 8601>" }`, with name and version read from `package.json`. Same build-time timestamp caveat as `/ping`.
 
 `astro.config.mjs`: Astro configuration file.
 
