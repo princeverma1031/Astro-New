@@ -5,7 +5,12 @@ import compressor from "astro-compressor";
 
 export default defineConfig({
   site: 'https://steincodeat.github.io/',
-  base: 'astro-starter-template/',
+  base: '/',
+  vite: {
+    server: {
+      allowedHosts: true,
+    },
+  },
   integrations: [
     sitemap(),
     icon({

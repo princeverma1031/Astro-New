@@ -106,6 +106,11 @@ The project contains a few minimalistic starter components and files to kickstar
 - `Header.astro` contains the navigation. It is preconfigured with a few standard links and a mobile version.
 - `Footer.astro` contains a footer component with basic links and a copyright notice.
 
+`src/pages/`: Site routes.
+
+- `index.astro` is the home page and `404.astro` the not-found page.
+- `ping.ts` is a static JSON health check endpoint served at `/ping`. It returns `{ "status": "ok", "timestamp": "<ISO 8601>" }`. Because the site is built statically, the timestamp reflects the last build time in production.
+
 `astro.config.mjs`: Astro configuration file.
 
 `.eslintrc.cjs`: Eslint configuration file.
